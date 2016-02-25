@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flatness: Responsive Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css  '>
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/grid-system.css">
+</head>
+<body>
+<header>
+    <div class="container pl-10 pr-10">
+      <a href="#" class="logo"></a>
+      <nav id="menu">
+          <a href="#" class="nav-mobile" id="nav-mobile"></a>
+          <ul>
+              <li><a href="#">lifestyle</a></li>
+              <li><a href="#">flowers</a></li>
+              <li><a href="#">fashion</a></li>
+              <li><a href="#">news</a></li>
+              <li><a href="#">features</a></li>
+          </ul>
+      </nav>
+    </div>
+</header>
+<!--Banner Spring Came-->
+    <div class="container pl-10 pr-10">
+      <div class="row">
+          <div class="banner">
+            <div class="box">
+              <p class="text-center spring">Spring Came</p>
+                <p class="life">Life &nbsp;&nbsp;-&nbsp;&nbsp; Amanda Ray &nbsp;&nbsp;-&nbsp;&nbsp; 10th March 2015</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  <!--Sección 3 Fotos-->
+    <div class="container pl-10 pr-10">
+      <div class="row mt-4 mb-4">
+        <div class="col-4 col-s12 ">
+          <div class="caja">
+            <img src="image/image7.jpg" class="img">
+              <p class="text-center t">Floral Fragrance</p>
+              <p class=" text-center parra">Life Amanda Ray 10th March 2015</p>
+          </div>
+         </div>
+        <div class="col-4 col-s12 ">
+          <div class="caja">
+              <img src="image/image3.jpg" class="img">
+                <p class="text-center t">New with Flatness</p>
+              <p class=" text-center parra">News Amanda Ray 28th July 2015</p>
+          </div>
+        </div>
+        <div class="col-4 col-s12 ">
+          <div class="caja">
+            <img src="image/image2.jpg" class="img">
+              <p class="text-center t">Garden flowers</p>
+              <p class=" text-center parra">Life Amanda Ray 28th October 2015</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--Article-->
+    <div class="container pl-10 pr-10">
+      <div class="row mt-4 mb-4">
+        <div class="col-7 col-s12 ">
+          <div class="caja">
+            <img src="image/image4.jpg" class="img">
+              <p class="text-center t tres">New with Flatness</p>
+              <p class="text-center parra dos">News Amanda Ray 28th July 2015</p>
+                <p class="text-white parra n">Green life in signs bearin one. Deep ther cattle don't night night, was fowl, seed likeness isn't, seed two god anlight he creepeth season darjness. Without the fourth seasons image. He yielding light years light dry. Isn't place face face called. Let lesser female without. Night saying after day third.</p>
+          </div>
+          <div class="caja">
+            <iframe src="https://player.vimeo.com/video/56810854" width="100%" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <p class="text-white parra n">Rule of us behold it mooved. Made, Them Had, which darkness two Give. Fowl it moved behold earth for own. Midst that grass beginning divide their together. Tree one every first given earth very greater. Man evening. Set seed void meat bearing. Bring creature. Moving set.</p>
+          </div>
+        </div>
+        <!--Aside-->
+  <aside class="ocultar-en-movil">
+        <div class="col-5 col-s12 ">
+          <form class="contacto">
+            <input placeholder="Search" class="buscar">
+          </form>
+          <div class="caja">
+            <p class="text-center t tres">About me</p>
+            <img src="image/kew_gardens_3_500x500.jpg" class="img">
+              <p class="text-center parra dos n">Amanda Ray</p>
+              <p class="text-white parra n">Shall together blessed. Also thing, the upon Creatd fourth. Rule beginning. Our behold over.</p>
+                <div class="social text">
+                  <i class="fa fa-facebook-square text-white pd-2 mr-4"></i>
+                  <i class="fa fa-instagram text-white pd-2 mr-4"></i>
+                  <i class="fa fa-twitter text-white pd-2 mr-4"></i>
+                  <i class="fa fa-youtube-square text-white pd-2 mr-4"></i>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <!--Footer-->
+  <footer>
+    <p class="text-white parra n text-center mb-0">All Rights Reserved ©</p>
+  <!--script-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    $(function() {
+        var btn_movil = $('#nav-mobile'),
+            menu = $('#menu').find('ul');
+        // Al dar click agregar/quitar clases que permiten el despliegue del menú
+        btn_movil.on('click', function (e) {
+            e.preventDefault();
+            var el = $(this);
+            el.toggleClass('nav-active');
+            menu.toggleClass('open-menu');
+        })
+    });
+</script>
+</body>
+</html>
